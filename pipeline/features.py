@@ -13,7 +13,7 @@ Logic:
   3. The transformed shards are concatenated back into a single DataFrame.
   4. A serial version is provided for benchmarking baseline.
 
-Why this matters:
+reasons:
   - Feature engineering is often the bottleneck in ML pipelines, not training.
   - On 500k rows, polynomial feature expansion (e.g., pairwise interactions on 40 numeric
     columns) produces ~820 new columns. Computing this on a single core takes minutes.
