@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.parquet
+benchmark_report.json
+benchmark_plot.png
