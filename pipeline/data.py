@@ -13,7 +13,7 @@ Logic:
      row-group skipping. This avoids loading the whole file into memory on any single process.
   5. Chunks are collected and concatenated after all workers finish.
 
-Why this matters:
+Why:
   - Reading a 500k-row CSV with pandas.read_csv() blocks on a single core for I/O + parsing.
   - Splitting the file into chunks and reading them concurrently saturates the I/O subsystem
     and parallelizes the CPU-bound parsing step.
