@@ -9,7 +9,7 @@ Stages benchmarked:
   3. Training             — single-core XGBoost vs multi-core XGBoost
   4. Hyperparameter search — n_jobs=1 vs n_jobs=-1 RandomizedSearchCV
 
-For each stage, we record:
+For each stage, record:
   - Wall-clock time (seconds)
   - Speedup ratio (t_serial / t_parallel)
   - Efficiency (speedup / n_workers)
