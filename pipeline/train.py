@@ -13,7 +13,7 @@ Logic:
   3. Both a serial (single-core XGBoost) and parallel (multi-core XGBoost + parallel CV)
      variant are provided so the benchmark module can measure the wall-clock difference.
 
-Why this matters:
+reasons:
   - Hyperparameter search is trivially parallel: evaluating M parameter sets on K folds
     produces M*K independent train-evaluate jobs.
   - XGBoost's internal parallelism + joblib's outer parallelism together demonstrate
