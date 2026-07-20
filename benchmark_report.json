@@ -1,0 +1,45 @@
+{
+  "config": {
+    "n_samples": 100000,
+    "n_workers": 4,
+    "n_physical_cores": 16
+  },
+  "stages": [
+    {
+      "name": "Data Loading",
+      "serial_time_s": 0.07,
+      "parallel_time_s": 3.11,
+      "speedup": 0.02,
+      "efficiency": 0.01
+    },
+    {
+      "name": "Feature Engineering",
+      "serial_time_s": 0.74,
+      "parallel_time_s": 3.38,
+      "speedup": 0.22,
+      "efficiency": 0.05
+    },
+    {
+      "name": "XGBoost Training",
+      "serial_time_s": 10.03,
+      "parallel_time_s": 3.13,
+      "speedup": 3.21,
+      "efficiency": 0.2,
+      "roc_auc": 0.9849
+    },
+    {
+      "name": "Hyperparameter Search",
+      "serial_time_s": 86.92,
+      "parallel_time_s": 26.34,
+      "speedup": 3.3,
+      "efficiency": 0.21,
+      "best_cv_auc": 0.9856
+    }
+  ],
+  "totals": {
+    "serial_total_s": 97.76,
+    "parallel_total_s": 35.96,
+    "overall_speedup": 2.72,
+    "pipeline_roc_auc": 0.9848
+  }
+}
