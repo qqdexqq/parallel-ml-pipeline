@@ -196,14 +196,5 @@ Two files are generated:
 
 ---
 
-## Next Steps (Week 3–4)
-
-After completing this project, the natural progression is:
-1. **GPU-Accelerated Training**: Port the training loop to PyTorch + CUDA
-2. **Distributed Training**: Scale beyond one machine with PyTorch DDP
-3. **Stream Processing**: Replace batch feature engineering with an online feature store
-
----
-
 *Built by **qqdex**.*
 
